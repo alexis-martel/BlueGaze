@@ -15,6 +15,9 @@
 		5E4F6CC02AC664E300ACF419 /* BlueGazeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4F6CBF2AC664E300ACF419 /* BlueGazeTests.swift */; };
 		5E4F6CCA2AC664E300ACF419 /* BlueGazeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4F6CC92AC664E300ACF419 /* BlueGazeUITests.swift */; };
 		5E4F6CCC2AC664E300ACF419 /* BlueGazeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4F6CCB2AC664E300ACF419 /* BlueGazeUITestsLaunchTests.swift */; };
+		5E8DC3152ADAE9A8009D8EA7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8DC3142ADAE9A8009D8EA7 /* SettingsView.swift */; };
+		5E8DC3172ADAEAE4009D8EA7 /* PlayerDeviceSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8DC3162ADAEAE4009D8EA7 /* PlayerDeviceSettingsView.swift */; };
+		5E8DC31A2ADAF318009D8EA7 /* PlayerDeviceUtilitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8DC3192ADAF318009D8EA7 /* PlayerDeviceUtilitiesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		5E4F6CC52AC664E300ACF419 /* BlueGazeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueGazeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E4F6CC92AC664E300ACF419 /* BlueGazeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueGazeUITests.swift; sourceTree = "<group>"; };
 		5E4F6CCB2AC664E300ACF419 /* BlueGazeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueGazeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5E8DC3142ADAE9A8009D8EA7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		5E8DC3162ADAEAE4009D8EA7 /* PlayerDeviceSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDeviceSettingsView.swift; sourceTree = "<group>"; };
+		5E8DC3192ADAF318009D8EA7 /* PlayerDeviceUtilitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDeviceUtilitiesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E2B1DD82ADC42FF0060DBAE /* StreamingServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StreamingServices;
+			sourceTree = "<group>";
+		};
+		5E2B1DDA2ADC43200060DBAE /* PlayerDeviceUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				5E8DC3192ADAF318009D8EA7 /* PlayerDeviceUtilitiesView.swift */,
+				5E058E432AD8734100C73B63 /* PlayerDeviceUtilities.swift */,
+			);
+			path = PlayerDeviceUtilities;
+			sourceTree = "<group>";
+		};
 		5E4F6CA12AC664E000ACF419 = {
 			isa = PBXGroup;
 			children = (
@@ -97,9 +119,11 @@
 		5E4F6CAC2AC664E100ACF419 /* BlueGaze */ = {
 			isa = PBXGroup;
 			children = (
+				5E2B1DDA2ADC43200060DBAE /* PlayerDeviceUtilities */,
+				5E2B1DD82ADC42FF0060DBAE /* StreamingServices */,
+				5E8DC3132ADAE954009D8EA7 /* Settings */,
 				5E4F6CAD2AC664E100ACF419 /* BlueGazeApp.swift */,
 				5E4F6CAF2AC664E100ACF419 /* ContentView.swift */,
-				5E058E432AD8734100C73B63 /* PlayerDeviceUtilities.swift */,
 				5E4F6CB12AC664E300ACF419 /* Assets.xcassets */,
 				5E4F6CB32AC664E300ACF419 /* BlueGaze.entitlements */,
 				5E4F6CB42AC664E300ACF419 /* Preview Content */,
@@ -130,6 +154,15 @@
 				5E4F6CCB2AC664E300ACF419 /* BlueGazeUITestsLaunchTests.swift */,
 			);
 			path = BlueGazeUITests;
+			sourceTree = "<group>";
+		};
+		5E8DC3132ADAE954009D8EA7 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				5E8DC3142ADAE9A8009D8EA7 /* SettingsView.swift */,
+				5E8DC3162ADAEAE4009D8EA7 /* PlayerDeviceSettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +295,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E8DC31A2ADAF318009D8EA7 /* PlayerDeviceUtilitiesView.swift in Sources */,
 				5E4F6CB02AC664E100ACF419 /* ContentView.swift in Sources */,
+				5E8DC3172ADAEAE4009D8EA7 /* PlayerDeviceSettingsView.swift in Sources */,
+				5E8DC3152ADAE9A8009D8EA7 /* SettingsView.swift in Sources */,
 				5E4F6CAE2AC664E100ACF419 /* BlueGazeApp.swift in Sources */,
 				5E058E442AD8734100C73B63 /* PlayerDeviceUtilities.swift in Sources */,
 			);

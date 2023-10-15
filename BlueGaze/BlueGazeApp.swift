@@ -11,7 +11,14 @@ import SwiftUI
 struct BlueGazeApp: App {
     var body: some Scene {
         WindowGroup {
+            
             ContentView()
+        }
+        Window("Remote Control", id: "remote") {
+            
+        }
+        Settings {
+            SettingsView()
         }
     }
 }
